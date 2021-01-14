@@ -1,11 +1,18 @@
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
+import Header from './components/Header'
+import SongList from './components/SongList'
+import SongPlayer from './components/SongPlayer'
+// import QueuedSongList from './components/QueuedSongList'
+import AddSong from './components/AddSong'
 
 function App() {
   return (
-    <div className='App'>
-      App
-    </div>
+    <>
+      <Header />
+      <AddSong />
+      <SongList />
+      <SongPlayer />
+    </>
   )
 }
 
